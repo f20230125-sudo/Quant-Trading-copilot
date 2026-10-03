@@ -125,6 +125,8 @@ Everything works without an API key: the copilot uses the local analyst. To use 
 
 ## Tests and evals
 
+CI runs the test suite, the local-analyst eval and the frontend lint and build on every push to `main` and every pull request. None of it needs an API key.
+
 ```bash
 cd backend
 .venv/Scripts/python -m pytest                          # 112 tests, about 5s, no API calls
